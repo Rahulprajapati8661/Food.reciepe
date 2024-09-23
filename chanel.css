@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+nav{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 166, 0);
+    height: 50vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    gap: 6vh;
+}
+nav ul{
+    display: flex;
+    gap :4rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+nav ul li{
+    list-style-type: none;
+    cursor: pointer;
+    border-bottom: 2px  solid transparent;
+}
+nav ul li:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: 0.4s;
+}
+nav .logo{
+    height: 22vh;
+    width: 22vh;
+    border-radius: 50%;
+    background-image:url("th (12)logo.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerHome{
+    display: block;
+}
+.heightHome{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display:flex ;
+    gap :2rem;
+}
+.mainmain{
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;  
+}
+.divmain{
+   width: 80%;
+   height: 40vh;
+   border: 2px solid black;
+   border-radius: 25px;
+   align-items: center;
+   justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+.divmain-1{
+   height: 70%;
+   width: 100%;
+   border-bottom:2px solid gray;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.divmain-1-logo{
+   background-image: url("th (3).jpg");
+   background-size: cover;
+   height: 20vh;
+   width: 20vh;
+   border-radius: 50%;
+   border: 2px solid black;
+}
+.divmain-1-para{
+   height: 20vh;
+   width: 65%;
+   border-radius: 10px;
+   border: 2px solid rgb(148, 148, 148);
+   align-items: center;
+   justify-content: space-between;
+   display: flex;
+   flex-direction:column ;
+}
+.divmain-1-para div{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 15px;
+   color: rgb(92, 92, 92);
+}
+.divmain-2{
+   height: 30%;
+   width: 100%;
+   border-top:2px solid gray;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.divmain-2-logo{
+   background-image: url("th (12)logo.jpg");
+   background-size: cover;
+   height: 8vh;
+   width: 8vh;
+   border-radius: 50%;
+   border: 2px solid black;
+   margin-left: 2rem;
+}
+.divmain-2-para{
+   height: 8vh;
+   width: 65%;
+   margin-left: 2.8rem;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction:column ;  
+}
+.divmain-1-btn{
+  
+   color:  rgb(2, 180, 2);
+   outline: none;
+   background: transparent;
+   border: none;
+   margin-bottom: 2px;
+   font-size: larger;
+   font-weight: 800;
+  
+}
+.divmain-2-btn{
+   background-color: rgb(0, 148, 0);
+   color: white;
+   border: green;
+   outline: none;
+   margin-bottom: 2px;
+   border-radius: 10px;
+   height: 1.7rem;
+   width: 7rem;
+}
+.divmain-2-para div{
+   display: flex;
+   flex-direction: row;
+   gap: 5rem;
+   font-size: larger;
+   font-weight: 800;
+}
+.divmain-2-para-price{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.fooddetail{
+    overflow: hidden;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 22rem;
+    width: 18%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    border-radius: 3rem;
+    box-shadow: 2px 2px 30px gray;
+}
+.imgdetail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 10rem;
+    width: 80%;
+}
+.imgdetail-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    height: 2rem;
+    width: 80%;
+}
+#ordernow{
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    border-radius: 25px;
+    background-color: rgb(1, 152, 1);
+    border: 1px solid rgb(1, 152, 1);
+}
+#ordernow:hover{
+    background-color: rgb(0, 200, 0);
+}
+#fooddetail-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width: 1319px) {
+  
+    .fooddetail{
+        width: 50vh;  
+    }
+    .divmain-2-para div {
+        gap: 0.4rem;
+    }
+  }
+  @media screen and (max-width: 817px) {
+    nav ul{
+        gap: 1rem;
+        font-size: 1rem;
+    }   
+    h2 {
+        font-size: large;
+        margin-left: 4rem;
+    }
+  } 
+  @media screen and (max-width: 451px) {
+  .divmain-2-para {
+    margin-left: 0.5rem;
+    font-weight: 800;
+        font-size: small;
+}
+nav ul {
+    gap: 0.8rem;
+    font-size: 0.8rem;
+}
+  }
+  @media screen and (min-width: 1319px) {
+    #fooddetail-main{
+      flex-direction: row;
+    }
+    .fooddetail{
+        width: 50vh;  
+    }
+    .divmain-2-para div {
+        gap: 0.4rem;
+    }
+  }
+  .containerVideo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .containerfooditem{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-container2{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-container2-container{
+  
+    margin-top: 2rem;
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.video1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 57px gray;
+    border-radius: 10px;
+    height: 90vh;
+    width: 53vh;
+}
+.video1 video{
+    border-radius: 10px;
+    object-fit: cover;  
+    width: 50vh;
+    height: 80vh;
+    
+}
+.titlevideo ,.titlevideo p ,.titlevideo h3{
+    color: red;
+    width: 54vh;
+}
+.containershort{
+    display: none;
+   margin-top:1rem;
+   padding-top:1rem;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.containercommunity{
+    display: none;
+    height: 100vh;
+    width: 100%;
+
+}
+    .post {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    
+    .post-content {
+        margin-bottom: 20px;
+    }
+    
+    .comments {
+        margin-bottom: 20px;
+        overflow: auto;
+    }
+    
+    .comment {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    
+    .comment-user {
+        font-weight: bold;
+    }
+    
+    .new-comment input,
+    .new-comment textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .new-comment button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
